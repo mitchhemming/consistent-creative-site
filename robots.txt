@@ -1,15 +1,16 @@
 # Consistent Creative — robots.txt
-# Only the landing page (/) should appear in search results.
 
 User-agent: *
 Allow: /$
 Allow: /index.html
+Allow: /automotive-lighting-blueprint/$
+Allow: /automotive-lighting-blueprint/index.html
 Disallow: /checkout.html
 Disallow: /thanks.html
-
-# Static assets that have no business in search
-Disallow: /og-image.jpg
-Disallow: /frames/
-Disallow: /portfolio/
+Disallow: /automotive-lighting-blueprint/checkout.html
+Disallow: /automotive-lighting-blueprint/thanks.html
+Disallow: /automotive-lighting-blueprint/og-image.jpg
+Disallow: /automotive-lighting-blueprint/frames/
+Disallow: /automotive-lighting-blueprint/portfolio/
 
 Sitemap: https://consistentcreative.com/sitemap.xml
