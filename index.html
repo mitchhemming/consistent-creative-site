@@ -76,13 +76,13 @@ h1 {
   font-family: var(--fh); font-weight: 900;
   text-transform: uppercase; letter-spacing: .01em;
   line-height: .9; color: var(--w);
-  font-size: clamp(42px, 11vw, 92px);
+  font-size: clamp(36px, 8.5vw, 64px);
 }
 h2 {
   font-family: var(--fh); font-weight: 900;
   text-transform: uppercase; letter-spacing: -0.01em;
   line-height: .95; color: var(--w);
-  font-size: clamp(30px, 7.5vw, 48px);
+  font-size: clamp(26px, 6vw, 38px);
 }
 .gc { color: var(--gold); }
 p { font-size: clamp(16px, 4.4vw, 17px); line-height: 1.65; color: var(--w80); }
@@ -100,7 +100,7 @@ p { font-size: clamp(16px, 4.4vw, 17px); line-height: 1.65; color: var(--w80); }
 @media (min-width: 768px) { .nav-links { display: flex; } }
 
 /* ── HERO ───────────────────────────────────── */
-.hero { position: relative; min-height: 100svh; display: flex; align-items: flex-end; overflow: hidden; }
+.hero { position: relative; min-height: 72svh; display: flex; align-items: flex-end; overflow: hidden; }
 .hero-bg { position: absolute; inset: 0; z-index: 0; }
 .hero-bg img { width: 100%; height: 100%; object-fit: cover; object-position: center 30%; filter: saturate(.85) brightness(.9); }
 .hero-bg::after {
@@ -154,7 +154,7 @@ p { font-size: clamp(16px, 4.4vw, 17px); line-height: 1.65; color: var(--w80); }
 .brands-list { font-family: var(--fh); font-size: clamp(17px, 4.6vw, 22px); font-weight: 700; letter-spacing: .04em; color: var(--w); text-transform: uppercase; line-height: 1.5; margin: 0; }
 
 /* ── PROGRAMS ───────────────────────────────── */
-.programs h2 { margin-bottom: 14px; }
+.programs h2 { margin-bottom: 28px; }
 .programs .intro { max-width: 600px; margin-bottom: 40px; }
 .prog-grid { display: grid; grid-template-columns: 1fr; gap: 20px; }
 @media (min-width: 768px) { .prog-grid { grid-template-columns: 1fr 1fr; gap: 24px; } }
@@ -178,7 +178,7 @@ p { font-size: clamp(16px, 4.4vw, 17px); line-height: 1.65; color: var(--w80); }
 .prog .btn { margin-top: auto; align-self: flex-start; }
 
 .btn-disabled { border: 1px solid var(--line); color: var(--w50); cursor: default; pointer-events: none; }
-.prog.featured .prog-tag.status, .prog .prog-tag.status { background: transparent; border: 1px solid var(--gold); color: var(--gold); margin-left: 8px; }
+.prog.featured .prog-tag.status, .prog .prog-tag.status { background: transparent; border: 1px solid var(--gold); color: var(--gold); }
 .prog-tags { display: flex; flex-wrap: wrap; align-items: center; margin-bottom: 18px; }
 .prog-tags .prog-tag { margin-bottom: 0; }
 
@@ -214,11 +214,6 @@ footer a:hover { color: var(--w); border-color: var(--w50); }
       <span class="wm1">Consistent</span>
       <span class="wm2">Creative</span>
     </a>
-    <div class="nav-links">
-      <a href="#about">About</a>
-      <a href="#programs">Programs</a>
-      <a href="mailto:contact@consistentcreative.com">Contact</a>
-    </div>
   </div>
 </nav>
 
@@ -229,13 +224,8 @@ footer a:hover { color: var(--w); border-color: var(--w50); }
   </div>
   <div class="hero-inner">
     <div class="c c-wide">
-      <span class="eye">Consistent Creative</span>
       <h1>Business education<br>for photographers<br>&amp; videographers.</h1>
       <p class="lead">15 years behind the camera. One real company. Everything I learned turning one into the other.</p>
-      <div class="hero-cta">
-        <a href="#programs" class="btn btn-gold">See the programs <span class="arrow">→</span></a>
-        <a href="#about" class="btn btn-ghost">About Mitch</a>
-      </div>
     </div>
   </div>
 </section>
@@ -243,7 +233,6 @@ footer a:hover { color: var(--w); border-color: var(--w50); }
 <!-- ═══════════════ ABOUT ═══════════════ -->
 <section class="about pad reveal" id="about">
   <div class="c c-wide">
-    <span class="eye">Who's behind it</span>
     <h2>I've done the thing I teach.</h2>
 
     <div class="story-grid">
@@ -252,7 +241,6 @@ footer a:hover { color: var(--w); border-color: var(--w50); }
         <p>A better portfolio didn't fix it. Retainers did. Once my best clients were on monthly agreements and my fixed costs were covered before the month began, I had room to build Aventus Media: the photo and video production company I own and run today, serving dealerships and real estate agencies with a team I hired and trained.</p>
         <p>I've shot for Lamborghini, McLaren, Ferrari, Bentley and Mercedes-Benz. I still do, when the car is worth it.</p>
         <p class="anchor-line">Consistent Creative is where I teach what actually worked. <strong>So you can skip the years I spent working it out.</strong></p>
-        <div class="sig">Mitch Hemming <span>Founder, Aventus Media &amp; Consistent Creative</span></div>
       </div>
       <div class="story-photo">
         <div class="photo-frame">
@@ -272,15 +260,13 @@ footer a:hover { color: var(--w); border-color: var(--w50); }
 <!-- ═══════════════ PROGRAMS ═══════════════ -->
 <section class="programs pad reveal" id="programs">
   <div class="c c-wide">
-    <span class="eye">Programs</span>
-    <h2>Two ways to work with me.</h2>
-    <p class="intro">One is about the business. One is about the craft. Both built on what worked, not what sells.</p>
+    <h2>Programs</h2>
 
     <div class="prog-grid">
       <article class="prog featured">
-        <div class="prog-tags"><span class="prog-tag">1-on-1 Coaching</span><span class="prog-tag status">Coming soon</span></div>
+        <div class="prog-tags"><span class="prog-tag status">Coming soon</span></div>
         <h3>Freedom Through Retainers</h3>
-        <div class="for">For photo &amp; video business owners</div>
+        <div class="for">1-on-1 coaching · Photo &amp; video business owners</div>
         <p>Cover your fixed costs with monthly retainers before the month starts. Stop chasing the next job. More life, less hustle.</p>
         <ul>
           <li>1-on-1 coaching, application only</li>
@@ -291,9 +277,9 @@ footer a:hover { color: var(--w); border-color: var(--w50); }
       </article>
 
       <article class="prog">
-        <div class="prog-tags"><span class="prog-tag">Online Course</span><span class="prog-tag status">Sold out</span></div>
+        <div class="prog-tags"><span class="prog-tag status">Sold out</span></div>
         <h3>The Automotive Lighting Blueprint</h3>
-        <div class="for">For automotive photographers</div>
+        <div class="for">Online course · Automotive photographers</div>
         <p>Flash and light painting for car photographers. Any car, any location, day or night.</p>
         <ul>
           <li>Six self-paced modules</li>
