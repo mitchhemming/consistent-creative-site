@@ -102,16 +102,19 @@ p { font-size: clamp(16px, 4.4vw, 17px); line-height: 1.65; color: var(--w80); }
 /* ── HERO ───────────────────────────────────── */
 .hero { position: relative; min-height: 72svh; display: flex; align-items: flex-end; overflow: hidden; }
 .hero-bg { position: absolute; inset: 0; z-index: 0; }
-.hero-bg img { width: 100%; height: 100%; object-fit: cover; object-position: center 30%; filter: saturate(.85) brightness(.9); }
+.hero-bg img { width: 100%; height: 100%; object-fit: cover; object-position: 38% 55%; filter: saturate(.8) brightness(.72); }
 .hero-bg::after {
   content: ''; position: absolute; inset: 0;
   background:
-    linear-gradient(to top, var(--bg) 0%, rgba(19,19,19,.92) 28%, rgba(19,19,19,.55) 60%, rgba(19,19,19,.35) 100%),
-    linear-gradient(to right, rgba(19,19,19,.6), rgba(19,19,19,0) 60%);
+    linear-gradient(to top, var(--bg) 0%, rgba(19,19,19,.9) 22%, rgba(19,19,19,.45) 55%, rgba(19,19,19,.25) 100%),
+    linear-gradient(to left, rgba(19,19,19,.75) 0%, rgba(19,19,19,.35) 45%, rgba(19,19,19,0) 70%);
 }
 .hero-inner { position: relative; z-index: 1; width: 100%; padding-bottom: 56px; padding-top: 130px; }
 @media (min-width: 768px) { .hero-inner { padding-bottom: 88px; } }
 .hero p.lead { margin-top: 22px; max-width: 560px; }
+.hero-text { max-width: 640px; }
+@media (max-width: 899px) { .hero { min-height: 92svh; } .hero-bg img { object-position: 36% 28%; } }
+@media (min-width: 900px) { .hero-text { margin-left: auto; width: 50%; } }
 .hero-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
 
 .btn {
@@ -216,13 +219,13 @@ footer a:hover { color: var(--w); border-color: var(--w50); }
 <!-- ═══════════════ HERO ═══════════════ -->
 <section class="hero">
   <div class="hero-bg">
-    <img src="automotive-lighting-blueprint/portfolio/mclaren-artura.jpg" alt="" fetchpriority="high">
+    <img src="hero.jpg" alt="" fetchpriority="high">
   </div>
   <div class="hero-inner">
-    <div class="c c-wide">
+    <div class="c c-wide"><div class="hero-text">
       <h1>Business education<br>for photographers &amp; videographers.</h1>
       <p class="lead">15 years behind the camera.<br>Turned freelancing into a media company.<br>Here's how.</p>
-    </div>
+    </div></div>
   </div>
 </section>
 
