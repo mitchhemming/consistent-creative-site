@@ -142,7 +142,7 @@ p { font-size: clamp(16px, 4.4vw, 17px); line-height: 1.65; color: var(--w80); }
 .photo-frame::before { top: -2px; left: -2px; clip-path: polygon(0 0, 100% 0, 100% 30%, 30% 30%, 30% 100%, 0 100%); }
 .photo-frame::after { bottom: -2px; right: -2px; clip-path: polygon(0 70%, 70% 70%, 70% 0, 100% 0, 100% 100%, 0 100%); }
 .photo-cap { margin-top: 12px; font-family: var(--fh); font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--w50); }
-.story-text { display: flex; flex-direction: column; gap: 16px; }
+.story-text { display: flex; flex-direction: column; gap: 14px; }
 .story-text p { margin: 0; }
 .story-text .anchor-line { color: var(--w); font-weight: 600; }
 .story-text .anchor-line strong { color: var(--gold); font-weight: 700; }
@@ -175,7 +175,7 @@ p { font-size: clamp(16px, 4.4vw, 17px); line-height: 1.65; color: var(--w80); }
 .prog ul { list-style: none; margin: 18px 0 26px; display: grid; gap: 10px; }
 .prog li { position: relative; padding-left: 20px; font-size: 15px; color: var(--w80); line-height: 1.45; }
 .prog li::before { content: ''; position: absolute; left: 0; top: 9px; width: 8px; height: 8px; background: var(--gold); border-radius: 1px; }
-.prog .btn { margin-top: auto; align-self: flex-start; }
+.prog .btn { margin-top: 26px; align-self: flex-start; }
 
 .btn-disabled { border: 1px solid var(--line); color: var(--w50); cursor: default; pointer-events: none; }
 .prog.featured .prog-tag.status, .prog .prog-tag.status { background: transparent; border: 1px solid var(--gold); color: var(--gold); }
@@ -225,7 +225,7 @@ footer a:hover { color: var(--w); border-color: var(--w50); }
   <div class="hero-inner">
     <div class="c c-wide">
       <h1>Business education<br>for photographers<br>&amp; videographers.</h1>
-      <p class="lead">15 years behind the camera. One real company. Everything I learned turning one into the other.</p>
+      <p class="lead">15 years behind the camera.<br>One real company.<br>Everything I learned turning one into the other.</p>
     </div>
   </div>
 </section>
@@ -237,10 +237,12 @@ footer a:hover { color: var(--w); border-color: var(--w50); }
 
     <div class="story-grid">
       <div class="story-text">
-        <p>15 years shooting automotive and real estate. I started freelance: good at the craft, bad at the business. Feast and famine. No idea what next month looked like.</p>
-        <p>A better portfolio didn't fix it. Retainers did. Once my best clients were on monthly agreements and my fixed costs were covered before the month began, I had room to build Aventus Media: the photo and video production company I own and run today, serving dealerships and real estate agencies with a team I hired and trained.</p>
-        <p>I've shot for Lamborghini, McLaren, Ferrari, Bentley and Mercedes-Benz. I still do, when the car is worth it.</p>
-        <p class="anchor-line">Consistent Creative is where I teach what actually worked. <strong>So you can skip the years I spent working it out.</strong></p>
+        <p>15 years shooting automotive and real estate.</p>
+        <p>I started freelance. Good at the craft, bad at the business.</p>
+        <p>Retainers fixed that. Fixed costs covered before the month began.</p>
+        <p>That gave me room to build Aventus Media, the photo and video company I own and run today.</p>
+        <p>I've shot for Lamborghini, McLaren, Ferrari, Bentley and Mercedes-Benz.<br>I still do, when the car is worth it.</p>
+        <p class="anchor-line">Consistent Creative is where I teach what actually worked.</p>
       </div>
       <div class="story-photo">
         <div class="photo-frame">
@@ -267,12 +269,7 @@ footer a:hover { color: var(--w); border-color: var(--w50); }
         <div class="prog-tags"><span class="prog-tag status">Coming soon</span></div>
         <h3>Freedom Through Retainers</h3>
         <div class="for">1-on-1 coaching · Photo &amp; video business owners</div>
-        <p>Cover your fixed costs with monthly retainers before the month starts. Stop chasing the next job. More life, less hustle.</p>
-        <ul>
-          <li>1-on-1 coaching, application only</li>
-          <li>The retainer system that turned my freelancing into a company</li>
-          <li>Established operators only</li>
-        </ul>
+        <p>Cover your fixed costs with monthly retainers.<br>Stop chasing the next job.<br>More life, less hustle.</p>
         <span class="btn btn-disabled" aria-disabled="true">Coming soon</span>
       </article>
 
@@ -280,12 +277,7 @@ footer a:hover { color: var(--w); border-color: var(--w50); }
         <div class="prog-tags"><span class="prog-tag status">Sold out</span></div>
         <h3>The Automotive Lighting Blueprint</h3>
         <div class="for">Online course · Automotive photographers</div>
-        <p>Flash and light painting for car photographers. Any car, any location, day or night.</p>
-        <ul>
-          <li>Six self-paced modules</li>
-          <li>Flash, light painting and the Photoshop workflow</li>
-          <li>Lifetime access</li>
-        </ul>
+        <p>Flash and light painting for car photographers.<br>Any car, any location, day or night.</p>
         <span class="btn btn-disabled" aria-disabled="true">Sold out</span>
       </article>
     </div>
