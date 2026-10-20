@@ -136,7 +136,9 @@ p { font-size: clamp(16px, 4.4vw, 17px); line-height: 1.65; color: var(--w80); }
 .h-name { text-transform: none; letter-spacing: .03em; font-weight: 700; }
 .story-grid { display: grid; grid-template-columns: 1fr; gap: 0; }
 @media (min-width: 768px) {
-  .story-grid { grid-template-columns: 1fr 42%; gap: 48px; align-items: start; }
+  .story-grid { grid-template-columns: 1fr 42%; gap: 48px; align-items: stretch; }
+  .story-photo { display: flex; }
+  .photo-frame { aspect-ratio: auto; height: 100%; min-height: 100%; }
 }
 .story-photo { order: -1; margin-bottom: 22px; }
 @media (min-width: 768px) { .story-photo { order: 0; margin-bottom: 0; } }
