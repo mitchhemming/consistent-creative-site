@@ -133,6 +133,7 @@ p { font-size: clamp(16px, 4.4vw, 17px); line-height: 1.65; color: var(--w80); }
 /* ── ABOUT ──────────────────────────────────── */
 .about { background: var(--s1); }
 .about h2 { margin-bottom: 14px; }
+.h-name { text-transform: none; letter-spacing: .03em; font-weight: 700; }
 .story-grid { display: grid; grid-template-columns: 1fr; gap: 0; }
 @media (min-width: 768px) {
   .story-grid { grid-template-columns: 1fr 42%; gap: 48px; align-items: start; }
@@ -234,7 +235,7 @@ footer a:hover { color: var(--w); border-color: var(--w50); }
   <div class="c c-wide">
     <div class="story-grid">
       <div class="story-text">
-        <h2>My name's Mitch Hemming.</h2>
+        <h2 class="h-name">My name's Mitch Hemming.</h2>
         <p>15 years shooting automotive and real estate.</p>
         <p>I started freelance. Good at the craft, bad at the business.</p>
         <p>Retainers fixed that. Fixed costs covered before the month began.</p>
